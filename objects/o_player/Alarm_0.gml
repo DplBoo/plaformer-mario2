@@ -1,1 +1,1 @@
-/// @description Bullet Cooldown Slarm
+/// @description Bullet Cooldown Alarm

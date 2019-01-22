@@ -16,3 +16,7 @@ keyboard_set_map(ord("D"), vk_right);
 // Bullet Cooldown
 bullet_cooldown_ = room_speed/6;
 alarm[0] = bullet_cooldown_;
+
+//scale Variables
+x_scale_ = image_xscale*4;
+y_scale_ = image_yscale;

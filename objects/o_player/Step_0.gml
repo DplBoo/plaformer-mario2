@@ -31,3 +31,7 @@ if place_meeting(x, y+vspeed_, o_solid) {
 	vspeed_ = 0;
 }
 y += vspeed_;
+
+//Move back to normal scale
+x_scale_ =lerp(x_scale_, image_xscale, .05);
+y_scale_ = lerp(y_scale_, image_yscale, .2);
