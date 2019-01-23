@@ -6,6 +6,6 @@ var gun_x = x-4*flipped;
 var x_offset = lengthdir_x(20, dir);
 var y_offset = lengthdir_y(20, dir);
 
-instance_create_layer(gun_x+x_offset, y+y_offset, "instances", o_bullet);
+instance_create_layer(gun_x+x_offset, y-sprite_height/2+y_offset, "instances", o_bullet);
 	alarm[0] = bullet_cooldown_;
 }

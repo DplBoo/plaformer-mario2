@@ -18,5 +18,5 @@ bullet_cooldown_ = room_speed/6;
 alarm[0] = bullet_cooldown_;
 
 //scale Variables
-x_scale_ = image_xscale*4;
+x_scale_ = image_xscale;
 y_scale_ = image_yscale;
