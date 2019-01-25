@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "10f00f53-cf9d-4eb4-958a-c05671452876",
+            "Value": {
+                "id": "aab5b387-c69e-4c7b-af6b-36e5277cf8c8",
+                "resourcePath": "objects\\o_enemy\\o_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "16010db1-028b-4063-a245-e825e1e70474",
             "Value": {
                 "id": "d0ba0cec-0aae-4aab-a60a-9a84584e683e",
@@ -60,6 +68,14 @@
                 "id": "bb397670-c6fa-40ae-85fc-0b438770fb87",
                 "resourcePath": "views\\20669b10-3407-4152-864c-9b082d5000ad.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3dc4dfbb-2e74-4aa8-85bc-b7363cb51751",
+            "Value": {
+                "id": "3e169eaf-f77b-4776-8afa-779b04e1bde3",
+                "resourcePath": "sprites\\s_enemy\\s_enemy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -100,6 +116,14 @@
                 "id": "397f51df-0c82-4602-995d-8a47cdeeba06",
                 "resourcePath": "views\\579d4b7b-3a1a-4a52-b8fe-0488e20ee994.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5d4d3009-84ab-43a8-b729-8edfa17230a8",
+            "Value": {
+                "id": "9b9b440d-f42a-4eab-b9c7-996479c90c38",
+                "resourcePath": "scripts\\move_push\\move_push.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -229,10 +253,19 @@
                 "resourcePath": "rooms\\r_one\\r_one.yy",
                 "resourceType": "GMRoom"
             }
+        },
+        {
+            "Key": "fc25daa5-61be-44a2-8527-7bbdd938dbd3",
+            "Value": {
+                "id": "1ab2be25-9e1d-431a-88f6-76a038588922",
+                "resourcePath": "scripts\\move\\move.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
-        
+        "fc25daa5-61be-44a2-8527-7bbdd938dbd3",
+        "5d4d3009-84ab-43a8-b729-8edfa17230a8"
     ],
     "tutorial": ""
 }
