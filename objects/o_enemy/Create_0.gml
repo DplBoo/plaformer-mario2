@@ -9,5 +9,6 @@ health_ = 4;
 //states
 MOVEMENT_ = 0;
 ATTACK_ = 1;
+HIT_ = 2;
 
 state_ = MOVEMENT_;
