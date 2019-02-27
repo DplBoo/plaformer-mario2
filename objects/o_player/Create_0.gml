@@ -6,6 +6,7 @@ gravity_ = .5;
 acceleration_ = 1;
 friction_ = .3;
 jump_height_ = -8;
+health_ = 5;
 
 //Map the Keys
 keyboard_set_map(ord("W"), vk_up);

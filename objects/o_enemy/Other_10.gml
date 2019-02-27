@@ -5,7 +5,7 @@ if instance_exists(o_player) {
 	var dir = point_direction(x, y, o_player.x, o_player.y);
 	hspeed_ = lengthdir_x(speed_, dir);
 	vspeed_ = lengthdir_y(speed_, dir);
-	move();
+move();
 
 	/// Push Force
 	move_push();
@@ -15,7 +15,7 @@ if instance_exists(o_player) {
 	}
 
 	///Death
-	if health_ <0 {
+	if health_ <=0 {
 		instance_destroy();
 	}
 
