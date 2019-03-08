@@ -18,7 +18,7 @@ if !place_meeting(x, y+1, o_solid) {
 	}
 } 
 
-move();
+move(hspeed_, vspeed_);
 
 //Check for Landing
 if place_meeting(x, y+1, o_solid) && !place_meeting(x, yprevious+1, o_solid) {
