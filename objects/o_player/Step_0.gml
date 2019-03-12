@@ -29,6 +29,7 @@ move(hspeed_, vspeed_);
 if place_meeting(x, y+1, o_solid) && !place_meeting(x, yprevious+1, o_solid) {
 	x_scale_ = image_xscale*1.4;
 	y_scale_ = image_yscale*.8;
+	vspeed_ = 0;
 }
 	
 //Move back to normal scale
