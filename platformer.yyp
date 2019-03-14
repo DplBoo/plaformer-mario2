@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "37ee3763-453b-4bc7-924f-522355063b8f",
+            "Value": {
+                "id": "4476d06e-40b2-411c-b6ae-b4674b125595",
+                "resourcePath": "sprites\\s_autocolision\\s_autocolision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3dc4dfbb-2e74-4aa8-85bc-b7363cb51751",
             "Value": {
                 "id": "3e169eaf-f77b-4776-8afa-779b04e1bde3",
