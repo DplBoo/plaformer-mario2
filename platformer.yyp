@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0151c570-a695-4a29-bc4e-cc52b5333a3b",
+            "Value": {
+                "id": "173b139e-d305-4689-9683-52bc61d7455e",
+                "resourcePath": "sprites\\delete_me\\delete_me.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0475c95c-af95-4d89-ab7d-385a4c7af025",
             "Value": {
                 "id": "d8818685-fd91-4de0-ae2b-403bc3f9ae56",
