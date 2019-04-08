@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "c896aaf4-4a6d-4c21-94f2-700f3c9d586f",
+            "Value": {
+                "id": "3e59742b-4a06-47fd-9fe4-3bea25380099",
+                "resourcePath": "scripts\\warpgml\\warpgml.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cb3de350-7cd6-4c9a-94fd-23608db18e04",
             "Value": {
                 "id": "9657a7e0-f53b-4b11-8f88-a3944ef58d11",
@@ -280,7 +288,8 @@
         }
     ],
     "script_order": [
-        "fc25daa5-61be-44a2-8527-7bbdd938dbd3"
+        "fc25daa5-61be-44a2-8527-7bbdd938dbd3",
+        "c896aaf4-4a6d-4c21-94f2-700f3c9d586f"
     ],
     "tutorial": ""
 }
