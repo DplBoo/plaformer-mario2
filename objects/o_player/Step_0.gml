@@ -7,13 +7,10 @@ if health_ <= 0 {
 var hinput = keyboard_check(vk_right) - keyboard_check(vk_left);
 
 if hinput != 0 {
-	hspeed_ += hinput*acceleration_;
-	hspeed_ = clamp(hspeed_, -max_hspeed_, max_hspeed_);
-	image_speed = .6;
+	speed_[h] +=hinput*acceleration_;
+	speed_[h] = clamp(speed_[h], -max_speed_, max_speed_ );
 } else {
-	hspeed_ = lerp(hspeed_, 0, friction_);
-	image_speed = 0;
-	image_index = 0;
+	speed_[h] = lerp(speed_[h], 0, friction_);
 }
 
 if !place_meeting(x, y+1, o_solid) {
