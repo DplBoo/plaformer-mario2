@@ -9,17 +9,18 @@ var hinput = keyboard_check(vk_right) - keyboard_check(vk_left);
 if hinput != 0 {
 	speed_[h] +=hinput*acceleration_;
 	speed_[h] = clamp(speed_[h], -max_speed_, max_speed_ );
+	image_speed = .6;
 } else {
 	speed_[h] = lerp(speed_[h], 0, friction_);
 }
 
 if !place_meeting(x, y+1, o_solid) {
-	vspeed_ += gravity_;
+	speed_[v] += gravity_;
 	image_speed = 0;
 	image_index = 6;
 } else {
 	if keyboard_check_pressed(vk_up){
-		vspeed_ = jump_height_;
+		speed_ = jump_height_;
 		x_scale_ = image_xscale*.8;
 		y_scale_ = image_yscale*1.4;
 	}
