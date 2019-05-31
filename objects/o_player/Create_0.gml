@@ -1,5 +1,5 @@
 /// @description create the variables
-speed_=0;
+speed_=[0,0];
 max_speed_ = 4;
 gravity_ = .5;
 acceleration_ = 1;
