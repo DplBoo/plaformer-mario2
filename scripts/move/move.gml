@@ -25,7 +25,7 @@ if place_meeting(x, y+speed_[v], o_solid) {
 	if bounce_ > 0 {
 		speed_[@ v] = -speed_[@ v]*bounce_
 	} else {
-	speed[v] = 0;
+	speed_[v] = 0;
 	}
 }
 y += speed_[v];

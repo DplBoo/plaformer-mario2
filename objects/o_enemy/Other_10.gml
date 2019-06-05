@@ -3,23 +3,12 @@
 /// Move Force
 if instance_exists(o_player) {
 	var dir = point_direction(x, y, o_player.x, o_player.y);
-	hspeed_ = lengthdir_x(speed_, dir);
-	vspeed_ = lengthdir_y(speed_, dir);
-move(hspeed_, vspeed_);
-
-	/// Push Force
-	move(hspeed_push_, vspeed_push_);
-	if !place_meeting(x, y, o_enemy) {
-		hspeed_push_ = lerp(hspeed_push_, 0, .1);
-		vspeed_push_ = lerp (vspeed_push_, 0, .1);
+	speed_[h] += lengthdir_x(acceleration_, dir);
+	speed_[v] += lengthdir_y(acceleration_, dir);
+	if point_distance(0, 0, speed_[h], speed_[v]) > max_speed_ {
+		var move_dir = point_direction(0, 0, speed_[h], speed_[v])
+		speed_[h] = lengthdir_x(max_speed_, move_dir);
+		speed_[v] = lengthdir_y(max_speed_, move_dir);
 	}
-
-	///Death
-	if health_ <=0 {
-		instance_destroy();
-	}
-
-	if distance_to_object(o_player) < 48 {
-		state_ = ATTACK_;
-	}
-}
+	
+move(speed_, 1) }
