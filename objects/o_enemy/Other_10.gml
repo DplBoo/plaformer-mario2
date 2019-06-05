@@ -1,6 +1,7 @@
 ///@description Move state
 
 /// Move Force
+
 if instance_exists(o_player) {
 	var dir = point_direction(x, y, o_player.x, o_player.y);
 	speed_[h] += lengthdir_x(acceleration_, dir);
@@ -10,5 +11,11 @@ if instance_exists(o_player) {
 		speed_[h] = lengthdir_x(max_speed_, move_dir);
 		speed_[v] = lengthdir_y(max_speed_, move_dir);
 	}
+	if distance_to_object(o_player) < 48 {
+		enemy_fire_bullet();
+	}
 	
-move(speed_, 1) }
+	enemy_fire_bullet();	
+}
+
+move(speed_, 1)
