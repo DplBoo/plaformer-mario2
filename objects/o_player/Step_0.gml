@@ -45,3 +45,9 @@ if place_meeting(x, y+1, o_solid) && !place_meeting(x, yprevious+1, o_solid) {
 
 x_scale_ = lerp(x_scale_, image_xscale, .2);
 y_scale_ = lerp(y_scale_, image_yscale, .2);
+
+if health_ <= 0 {
+	instance_destroy();
+	audio_stop_all()
+	game_restart()
+}
